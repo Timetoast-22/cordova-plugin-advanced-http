@@ -7,6 +7,7 @@
  */
 
 #import "SDNetworkActivityIndicator.h"
+#import <UIKit/UIKit.h>
 
 @interface SDNetworkActivityIndicator()
 {
@@ -24,7 +25,7 @@
     dispatch_once(&onceToken, ^{
         _sharedInstance = [[self alloc] init];
     });
-    
+
     return _sharedInstance;
 }
 
